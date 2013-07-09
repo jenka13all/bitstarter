@@ -1,7 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 
-var hello_buffer = fs.readFileSnync("index.html");
+var hello_buffer = fs.readFileSync("index.html");
 
 var app = express.createServer(express.logger());
 
