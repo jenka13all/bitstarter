@@ -43,6 +43,8 @@
 	    padding-top: 1.5%;
 	    font-size: 24px;
 	    line-height: 30px;
+//not sure why I have to do this
+	    text-align: center;
 	}
 
 	p {
@@ -74,48 +76,182 @@
     </head>
 
 <body>
-    <div class="container">
-	<div class="row navigation">
-	    <div class="span2 logo">Logo</div>
-	    <div class="span6 blank">Blank</div>
-	    <div class="span4 about">About</div>
-	</div>
 
-	<div class="row heading">
-	    <div class="span12"><h1>EasyChef</h1></div>
-	</div>
+<!-- Mobil-friendly navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+	<div class="container">
+	    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	    </button>
 
-	<div class="row subheading">
-	    <div class="span12">
-		<p class="lead">This is my EasyChef Bitstarter</p>
+	    <a class="brand" href="#">Bitstarter</a>
+	    <div class="nav-collapse collapse">
+		<ul class="nav">
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#contact">Contact</a></li>
+		</ul>
 	    </div>
-	</div>
-
-	<div class="row pitch">
-	    <div class="span6 video">Video</div>
-	    <div class="span6">
-		<div class="thermometer">Thermometer</div>
-		<div class="order">Order</div>
-		<div class="social">Social</div>
-	    </div>
-	</div>
-
-	<div class="row section1">
-	    <div class="span12">Marketing Section 1</div>
-	</div>
-
-	<div class="row section2">
-	    <div class="span12">Marketing Section 2</div>
-	</div>
-
-	<div class="row faq">
-	    <div class="span12">FAQ</div>
-	</div>
-
-	<div class="row footer">
-	    <div class="span12">Footer</div>
 	</div>
     </div>
+</div>
+
+<div class="container">
+    <div class="row-fluid heading">
+	<div class="span12">
+	    <h1>Vegan Fast Feed</h1>
+	</div>
+    </div>
+
+    <div class="row-fluid subheading">
+	<div class="span12">
+	    <p class="lead">Makes deciding what's for dinner as easy as (vegan) pie.</p>
+	</div>
+    </div>
+
+    <div class="row-fluid pitch">
+	<div class="span5 offset1 video">
+	    <img class="img-polaroid" src="http://placehold.it/480x300">
+	</div>
+
+	<div class="span5 actions">
+	    <div class="span8 offset2">
+		<div class="statistics">
+		    <div class="span4">
+			<div class="linediv-l">
+			    <h3>4200</h3> <p>vegans</p>
+			</div>
+		    </div>
+
+		    <div class="span4">
+			<div class="linediv-c">
+			    <h3>4200</h3> of <p>1,000,000</p>
+			</div>
+		    </div>
+
+		    <div class="span4">
+			<div class="linediv-r">
+			    <h3>120</h3> <p>days left</p>
+			</div>
+		    </div>
+		</div><!-- statistics -->
+	    </div><!-- span8 offset2 -->
+
+	    <div class="span10 offset1">
+		<div class="thermometer progress active">
+		    <div class="bar bar-success" style="width: 60%"></div>
+		    <div class="bar bar-warning" style="width: 50%"></div>
+		</div>
+	    </div>
+
+	    <div class="span6 offset3 order">
+		<button class="btn btn-success btn-large">Preorder</button>
+	    </div>
+
+	    <div class="span8 offset2 social">
+		<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button>
+		<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook </button>
+	    </div>
+
+	</div><!-- span5 actions -->
+    </div><!-- row fluid-pitch -->
+
+    <div class="row-fluid section1">
+	<div class="span5 offset1 asset">
+	    <img class="img-polaroid" src="http://placehold.it/480x300">
+	</div>
+
+	<div class="span5 copy">
+	    <p>Ladyship it daughter securing procured or am moreover mr. Put sir she exercise vicinity cheerful wondered. Continual say suspicion provision you neglected sir curiosity unwilling. Simplicity end themselves increasing led day sympathize yet. General windows effects not are drawing man garrets.  </p>
+	</div>
+    </div>
+
+    <div class="row-fluid section2">
+	<div class="span5 offset1 copy copy-right">
+	    <p>Common indeed garden you his ladies out yet. Preference imprudence contrasted to remarkably in on. Taken now you him trees tears any. Her object giving end sister except oppose.</p>
+	</div>
+
+        <div class="span5 asset">
+	    <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+    </div>
+
+    <div class="row-fluid faq">
+	<div class="span10 offset1">
+	    <h3>FAQ</h3>
+	    <div class="accordian" id="accordian2">
+		<div class="accordian-group">
+		    <div class="accordian-heading">
+		    	<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseOne">
+			Off the top of your head, can you list off all of the ingredients that are currently in your kitchen?
+		    	</a>
+		    </div>
+
+		    <div id="collapseOne" class="accordian-body collapse">
+		    	<div class="accordian-inner">
+			Probably not!
+		    	</div>
+		    </div>
+	        </div>
+
+		<div class="accordian-group">
+		    <div class="accordian-heading">
+		    	<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseTwo">
+			Which ingredients do you still need to buy for that hot new vegan recipe that was just published RIGHT NOW on your "Post Punk Kitchen" or "Oh She Glows" RSS Feed?
+		    	</a>
+		    </div>
+
+		    <div id="collapseTwo" class="accordian-body collapse">
+		    	<div class="accordian-inner">
+			I have no idea!
+		    	</div>
+		    </div>
+	        </div>
+
+		<div class="accordian-group">
+		    <div class="accordian-heading">
+		    	<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseThree">
+			Do you want to get home after buying groceries just to find out that you don't have what you need to make the newest recipe post from the "Vegan Yum Yum" RSS Feed and will just have to eat the same thing for dinner that you usually end up having to eat...AGAIN?
+		    	</a>
+		    </div>
+
+		    <div id="collapseThree" class="accordian-body collapse">
+		    	<div class="accordian-inner">
+			HELL NO!
+		    	</div>
+		    </div>
+	        </div>
+
+		<div class="accordian-group">
+		    <div class="accordian-heading">
+		    	<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseFour">
+			OH NOES!!11!  WHAT ON EARTH ARE YOU GOING TO DO ABOUT THIS PROBLEM???
+		    	</a>
+		    </div>
+
+		    <div id="collapseFour" class="accordian-body collapse">
+		    	<div class="accordian-inner">
+			I'm gonna whip out my trusty VEGAN FAST FEED app - he'll tell me about the newest recipes from my favorite vegan recipe RSS feeds that *match the most ingredients that I already have at home*.  He'll also send me a list of the few additional ingredients that I still might need to buy.  Best of all, VEGAN FAST FEED is gonna' save my selected recipe with its instructions and photos!
+
+NOM NOM NOM - that was easy!  Vegan Fast Feed - you saved dinner once again! 
+		    	</div>
+		    </div>
+	        </div>
+	    </div><!-- accordian -->
+	</div><!-- span10 offset -->
+
+    </div><!-- faq -->
+
+    <div class="row-fluid footer">
+	<div class="span12">
+	    <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a></p>
+	</div>
+    </div>
+</div>
+
 </body>
 </html>
 
